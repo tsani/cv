@@ -1,0 +1,108 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage[english]{babel}
+\usepackage{array,xcolor}
+\usepackage{hyperref}
+\usepackage{multicol}
+
+\definecolor{lightgray}{gray}{0.8}
+\newcolumntype{L}{>{\raggedleft}p{0.22\textwidth}}
+\newcolumntype{R}{p{0.78\textwidth}}
+\newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
+
+\setlength{\parindent}{0pt}
+\pagenumbering{gobble}
+
+\title{\vspace{-1.5em}Jacob Errington}
+\author{\texttt{jacob.errington@mail.mcgill.ca}}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+%\begin{center}
+%    \begin{tabular}[h]{p{5.0cm} p{2.0cm} p{5.0cm}}
+%        &
+%        &
+%        Nationality -- Canadian          \newline
+%        Date of birth -- 10 January 1995   \newline
+%        Phone -- (514) 503-3100
+%    \end{tabular}
+%\end{center}
+
+\begin{multicols}{2}
+    \centering
+    \begin{tabular}{r l}
+        Address & 1105 rue Woodland \\
+              ~ & Verdun, H4H 1W1   \\
+              ~ & Quebec
+    \end{tabular}
+    \columnbreak
+    \begin{tabular}{r l}
+        Nationality & Canadian \\
+        Date of birth & 10 January 1995 \\
+        Phone & +1 514 503-3100
+    \end{tabular}
+\end{multicols}
+
+\hrule
+
+\subsection*{Education}
+
+\begin{tabular}[h]{L!{\VRule}R}
+    2014-present & B.Sc. Comp. Sci. \& Math., McGill University, Montreal.                              \\
+                 & CGPA $3.62$                                                                          \\
+    2012-2014    & D\'EC in Pure and Applied Science (First Choice profile), Dawson College, Westmount. \\
+                 & Admitted to the Honour Roll every semester; Final overall average above 90\%.        \\
+    2007-2012    & D\'ES, D\'ESI, and IB, Coll\`ege Saint-Louis, Lachine.
+\end{tabular}
+
+\subsection*{Work experience}
+
+\begin{tabular}[h]{L!{\VRule}R}
+    January 2014 to \emph{present} & CTO \& Cofounder, full-stack web development \\
+                                       & Ahvoda Recruitment Inc. \\
+                                       & \url{http://ahvoda.com} \\
+    June 2014 to June 2015         & Research assistant, scientific programming in genetics, big data \\
+                                       & McGill University and Genome Qu\'ebec Innovation Centre, 740 Avenue du Dr Penfield, Montreal \\
+                                       & Supervised by \href{http://simongravel.lab.mcgill.ca/Home.html}{Simon Gravel}, \texttt{simon.gravel@mcgill.ca}, \\
+\end{tabular}
+
+\subsection*{Projects}
+
+\begin{description}
+    \item[FishBucketChallenge.] To help scientists working on medication for
+        ALS (Lou Gehrig's disease), in 24 hours my team developed computer
+        vision software in Python to track the movement of zebra fish, and
+        determine their maximum velocity based only on low-resolution grayscale
+        videos of the fish.
+    \item[Histograph.] Firefox addon to display browsing history and currently
+        open tabs in a side panel as a directed graph. Such a representation
+        more adequately reflects the graph-like nature of the web, so it is a
+        major improvement over the traditional linear browser history. Built at
+        McHacks, Winter 2015.
+    \item[TeXnote.] Online environment for creating documents in \LaTeX.
+        Document source code is written directly into the browser, and a live
+        PDF preview is displayed to the side. The code is compiled server-side,
+        so no client installation is needed. The SendGrid API is integrated to
+        allow users to easily include scanned images into their documents to
+        facilitate rapid document drafting. Built at MHacks, Winter 2015.
+        \emph{Winner of the SendGrid API prize.}
+    \item[CryptSMS.] TOR for SMS. This tool provides onion routing bolted onto
+        the SMS protocol to allow anonymous and private delivery of SMS by
+        bouncing messages off a known list of peers. Built at YHack, Fall 2014.
+\end{description}
+
+\subsection*{Personal}
+
+I am a classically trained pianist, having taken ten years of private lessons.
+I'm passionate about languages and their subtleties. I've taken courses in
+Spanish, Modern Greek, and some Mandarin. I also speak the constructed language
+Lojban.
+My interests include electronic music, roleplaying games, independently
+published video games, and free and open source software.
+
+\end{document}
