@@ -1,15 +1,15 @@
 .PHONY: all
-all: Jacob-Errington.pdf
+all: Jacob-Errington.pdf deploy
 
 LATEX = pdflatex
-DEPLOYDEST = ~/www/files
+DEPLOYDEST = $(shell test -d ~/www/files && echo ~/www/files || echo .)
 
 .PHONY: clean
 clean:
 	@rm -vf Jacob-Errington.pdf cv.pdf *.aux *.out *.log
 
 .PHONY: deploy
-deploy:
+deploy: Jacob-Errington.pdf cv.pdf
 	@cp -v Jacob-Errington.pdf $(DEPLOYDEST)
 	@cp -v cv.pdf $(DEPLOYDEST)
 
