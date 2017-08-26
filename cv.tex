@@ -66,10 +66,12 @@
     & B.Sc. Mathematics \& Computer Science, McGill University,
       Montreal, Quebec \\
     & CGPA $3.67$ \\
+    & Relevant courses: compiler design, computability theory,
+      logic and computation, set theory. \\
   2012 to 2014
     & D\'EC in Pure and Applied Science (Honours),
       Dawson College, Westmount. \\
-    & Admitted to the Honour Roll every semester;
+    & Admitted to the Honour Roll every semester.
       Final overall average above 90\%.
 \end{tabular}
 
@@ -78,14 +80,22 @@
 \begin{tabular}[h]{L!{\VRule}R}
   Sept. 2015 to May 2016
     & Outreach director at HackMcGill, McGill University's hacker club. \\
-    & Organize community events and tutorials,
-      participate in organizing McHacks, \\
+    & Organized community events and tutorials,
+      participated in organizing McHacks. \\
     & \url{http://mchacks.io/}.
 \end{tabular}
 
 \subsection*{Projects}
 
 \begin{description}
+  \item[Fast accumulator startup.]
+    In a 10-week internship at 1010data, I was tasked with speeding up the
+    core platform login. Logging in involves starting up an accumulator
+    process, written in K, to execute the user's requests. My work
+    accelerates accumulator startup by introducing a caching mechanism for
+    accumulators based on forking: partially started accumulators are
+    cached, which allows skipping the loading procedure for new sessions.
+
   \item[Goto.]
      For a course on compiler design, my partner and I implemented a compiler
      for a subset of Go called GoLite in Haskell. Our compiler featured a
@@ -95,8 +105,6 @@
      For outstanding achievement in the course, I was personally emailed by the
      professor -- Dr. Laurie Hendren, ACM fellow, Canada Research Chair, and
      fellow of the Royal Society of Canada -- to congratulate me.
-
-     \url{https://github.com/tsani/goto}
 
   \item[servant-github-webhook.] A Haskell library that provides easy to
     use combinators for the \texttt{servant} web framework for handling
