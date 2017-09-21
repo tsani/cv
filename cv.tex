@@ -15,6 +15,8 @@
 \setlength{\parindent}{0pt}
 \pagenumbering{gobble}
 
+\newcommand\jobtitle\textit
+
 \title{\vspace{-1.5em}Jacob Thomas Errington}
 \author{\texttt{jake@mail.jerrington.me} -- \url{https://jerrington.me} \\ $+1\;(514)\;503-3100$}
 \date{}
@@ -29,31 +31,33 @@
 
 \begin{tabular}[h]{L!{\VRule}R}
   Jun. 2017 to Aug. 2017
-    & Software developer -- 10-week internship program \\
-    & 1010data Services Inc., \url{http://1010data.com} \\
+    & \jobtitle{Software developer intern}
+      @ 1010data Services Inc., New York City; \url{http://1010data.com} \\
     & Linux systems programming in C, application programming in
       \href{https://en.wikipedia.org/wiki/K_\%28programming_language\%29}{K}.
       \\
     & Improved login time by a factor of 12. \\
     & Developed new infrastructure for debugging K applications. \\
+    & \emph{Received post-graduation return offer.} \\
     & \\
   Feb. 2016 to Feb. 2017
-    & Software engineer -- lead integration developer \\
-    & OOHLALA Mobile Inc., \url{http://oohlalamobile.com} \\
+    & \jobtitle{Software engineer}
+    @ OOHLALA Mobile Inc., Montreal; \url{http://oohlalamobile.com} \\
     & Backend web and server-side development; Python, SQL. \\
     & Developed integrations with existing institutional infrastructure. \\
     & \\
   Jan. 2015 to Sept. 2015
-    & CTO and cofounder \\
-    & Ahvoda Recruitment, Inc. (now closed) \\
-    & Participated in McGill's X-1 startup accelerator,
+    & \jobtitle{CTO and cofounder}
+    @ Ahvoda Recruitment, Inc. (now closed,) Montreal \\
+    & Part of the McGill X-1 startup accelerator,
       \url{http://mcgillx1accelerator.com} \\
     & Full-stack web development, native Android development,
-      database administration \\
+      database administration. \\
     & \\
   Jun. 2014 to Jun. 2015
-    & Research assistant, scientific programming in genetics, big data. \\
-    & McGill University and Genome Quebec Innovation Centre \\
+    & \jobtitle{Research assistant}
+    @ McGill University and Genome Quebec Innovation Centre \\
+    & Scientific programming in genetics, big data. \\
     & Supervised by
       \href{http://simongravel.lab.mcgill.ca/Home.html}{Simon Gravel},
       \href{mailto:simon.gravel@mcgill.ca}{simon.gravel@mcgill.ca}
@@ -65,7 +69,7 @@
   2014 to 2017
     & B.Sc. Mathematics \& Computer Science, McGill University,
       Montreal, Quebec \\
-    & CGPA $3.67$ \\
+    & CGPA $3.69$ \\
     & Relevant courses: compiler design, computability theory, logic,
       set theory. \\
   2012 to 2014
@@ -89,27 +93,23 @@
 
 \begin{description}
   \item[Fast accumulator startup.]
-    In a 10-week internship at 1010data, I was tasked with speeding up the
-    core platform login. Logging in involves starting up an accumulator
-    process, written in K, to execute the user's requests. My work
-    accelerates accumulator startup by introducing a caching mechanism for
-    accumulators based on forking: partially started accumulators are
-    cached, which allows skipping the loading procedure for new sessions.
+    In a 10-week internship at 1010data in New York City, I worked to
+    accelerate the core platform login.
+    My work achieves this by introducing a caching mechanism:
+    new user session processes are now started via forking.
+    This mechanism is built as a C extension to the K interpreter, and includes
+    a framework for reparenting terminal applications to facilitate debugging.
 
   \item[Goto.]
-     For a course on compiler design, my partner and I implemented a compiler
+     For a course on compiler design, my teammate and I implemented a compiler
      for a subset of Go called GoLite in Haskell. Our compiler featured a
      partial x86\_64 code generator, as well as a complete C++ code generator.
      Our C++ generator emitted faster code than the reference compiler.
 
-     For outstanding achievement in the course, I was personally emailed by the
-     professor -- Dr. Laurie Hendren, ACM fellow, Canada Research Chair, and
-     fellow of the Royal Society of Canada -- to congratulate me.
-
-  \item[servant-github-webhook.] A Haskell library that provides easy to
-    use combinators for the \texttt{servant} web framework for handling
-    GitHub webhooks.
-    \url{https://github.com/tsani/servant-github-webhook}
+     As McGill does not have an A+ grade, Professor Laurie Hendren contacted me
+     to award me with an honorary A+ for outstanding achievement in the course.
 \end{description}
+
+See \url{https://jerrington.me/projects.html} for more.
 
 \end{document}
