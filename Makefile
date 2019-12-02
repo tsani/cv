@@ -10,11 +10,11 @@ clean:
 
 .PHONY: deploy
 deploy: Jacob-Errington.pdf cv.pdf
-	@cp -v Jacob-Errington.pdf $(DEPLOYDEST)
-	@cp -v cv.pdf $(DEPLOYDEST)
+	-@cp -v Jacob-Errington.pdf $(DEPLOYDEST)
+	-@cp -v cv.pdf $(DEPLOYDEST)
 
 Jacob-Errington.pdf: cv.pdf
-	@cp -v cv.pdf Jacob-Errington.pdf
+	-@cp -v cv.pdf Jacob-Errington.pdf
 
 cv.pdf: cv.tex
 	@$(LATEX) cv
