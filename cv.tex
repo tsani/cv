@@ -1,11 +1,17 @@
 \documentclass{article}
 
 \usepackage[utf8]{inputenc}
+\usepackage{titlesec}
 \usepackage[margin=1.0cm]{geometry}
 \usepackage[english]{babel}
 \usepackage{array,xcolor}
 \usepackage{hyperref}
 \usepackage{multicol}
+
+\titlespacing*{\subsubsection}%
+  {0pt}
+  {2pt}
+  {2pt}
 
 \definecolor{lightgray}{gray}{0.8}
 \newcolumntype{L}{>{\raggedleft}p{0.20\textwidth}}
@@ -17,10 +23,13 @@
 
 \newcommand\jobtitle\textit
 
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
 \title{\vspace{-1.5em}\textbf{Jacob Thomas Errington}}
 \author{%
-  \texttt{jake@mail.jerrington.me} -- \url{https://jerrington.me} -- \url{https://github.com/tsani} \\
-  $+1\;(514)\;503-3100$%
+  \texttt{jake@mail.jerrington.me} -- \texttt{+1 (514) 503-3100} \\
+  \url{https://jerrington.me} -- \url{https://github.com/tsani}
 }
 \date{}
 
@@ -28,42 +37,82 @@
 
 \maketitle
 
+I am a university-level functional programming educator with fintech industry experience
+looking for new, evolving challenges in a fast-paced, education-forward position. I hold a graduate
+degree in programming language theory and my passion is to foster students' skills and appreciation
+of functional programming.
+
+~\\
+
 \hrule
 
-\subsection*{Work experience}
+\subsection*{Work history}
 
-\begin{tabular}[h]{L!{\VRule}R}
-  Jul 2022 to Jul 2025
-  & \jobtitle{Faculty Lecturer}
-    @ School of Computer Science, McGill University (three-year contract) \\
-  & Teach four core, degree-program courses each year ($\sim 1000$ students per year) \\
-  & Train and manage teaching assistants ($\sim 10$ per semester) \\
-  & Participate in department committees (admissions, program, pedagogy) \\
-  & Supervise and mentor students one-on-one in research projects \\
-  ~ & ~ \\
-  Aug 2020 to Mar 2022
-  & \jobtitle{Software developer} @ DRW Trading Group (full-time position) \\
-  & Full-stack web development (NodeJS, React, TypeScript) \\
-  & High-performance market data processing (C++, libuv, RabbitMQ, OracleDB) \\
-  & Participate in design, communicate with stakeholders, produce and review
-    code \\
-  & Community: presenting at quarterly lightning talks,
-    active in knowledge-sharing in the team \\
-  ~ & ~ \\
-  Fall 2019
-  & \jobtitle{Course instructor} @ McGill University (one-term contract) \\
-  & Co-teach COMP~302, a second-year course about functional
-    programming ($\sim 150$ students)\\
-  & Give lectures, prepare and grade exams, supervise teaching assistants, hold office
-    hours \\
-  ~ & ~ \\
-  Multiple times
-  & \jobtitle{Teaching assistant} @ McGill University (one-term contracts) \\
-  & Fall 2017, Fall 2018: COMP 302 (functional programming) \\
-  & Winter 2019: COMP 527 (logic and computation) \\
-  & Advise students on homework problems, participate in grading homework
-    and exams, assist in preparing homework and in course administration \\
-  ~ & ~ \\
+\subsubsection*{%
+  \jobtitle{Faculty Lecturer} @ McGill University, Montreal (full-time)
+  \hfill 2022 to \emph{present}
+}
+\begin{itemize}
+    \tightlist
+  \item Teach four core, degree-program computer science courses each year ($\sim 1000$ students per year)
+  \item Academic specialization: programming languages and paradigms, software systems
+  \item Run a team of teaching assistants ($10\sim20$ per semester)
+  \item Participate in department committees (admissions, program, pedagogy)
+  \item Supervise and mentor students one-on-one in research projects
+  \item Introduced custom CI/CD pipeline for homework submission and autograding,
+    \textbf{saving over 400 hours of TA time ($\sim \$12,000$) per semester}
+\end{itemize}
+
+\subsubsection*{%
+  \jobtitle{Software Developer} @ DRW Trading Group, Montreal (full-time)
+  \hfill Summer 2020 to Spring 2022
+}
+\begin{itemize}
+    \tightlist
+  \item Full-stack web development (NodeJS, React, TypeScript)
+  \item High-performance market data processing (C++, libuv, RabbitMQ, OracleDB)
+  \item \textbf{Work featured in office-wide conference}
+  \item Community: presenting at quarterly lightning talks, active in knowledge-sharing in the team
+\end{itemize}
+
+% \subsubsection*{%
+%   \jobtitle{Course instructor} @ McGill University (4-month contract)
+%   \hfill Fall 2019
+% }
+% \begin{itemize}
+%     \tightlist
+%   \item Co-teach COMP~302, a second-year course about functional programming ($\sim 150$ students)
+%   \item Give lectures, prepare and grade exams, supervise teaching assistants, hold office hours
+% \end{itemize}
+
+\subsubsection*{%
+  \jobtitle{Software Developer Intern} @ 1010data Services Inc., New York City (full-time)
+  \hfill Summer 2017
+}
+\begin{itemize}\tightlist
+  \item Linux systems programming in C, application programming in \href{https://en.wikipedia.org/wiki/K_\%28programming_language\%29}{K}.
+  \item \textbf{Improved login time by a factor of 11}
+  \item Developed new debugging infrastructure for K applications
+  % \item \emph{Received post-graduation return offer}
+\end{itemize}
+
+\subsubsection*{
+  \jobtitle{Software Engineer} @ (formerly) \href{https://www.readyeducation.com}{OOHLALA Mobile}
+  (part-time)
+  \hfill Winter 2016 to Winter 2017
+}
+\begin{itemize}\tightlist
+  \item Backend web and server-side development; Python, SQL
+  \item Built institutional infrastructure integrations upsold to hundreds of universities.
+\end{itemize}
+
+  % Multiple times
+  % & \jobtitle{Teaching assistant} @ McGill University (one-term contracts) \\
+  % & Fall 2017, Fall 2018: COMP 302 (functional programming) \\
+  % & Winter 2019: COMP 527 (logic and computation) \\
+  % & Advise students on homework problems, participate in grading homework
+  %   and exams, assist in preparing homework and in course administration \\
+  % ~ & ~ \\
   %
   % May 2017 to May 2018
   % & \jobtitle{Technical lead} (part-time)
@@ -71,20 +120,6 @@
   % & Advise the purchase of new equipment, maintain existing PCs, web
   %   development. \\
   % \\
-  Jun 2017 to Aug 2017
-  & \jobtitle{Software developer intern}
-    @ 1010data Services Inc., New York City; \url{http://1010data.com} \\
-  & Linux systems programming in C, application programming in
-    \href{https://en.wikipedia.org/wiki/K_\%28programming_language\%29}{K}. \\
-  & Improved login time by a factor of 12 \\
-  & Developed new infrastructure for debugging K applications \\
-  & \emph{Received post-graduation return offer} \\
-  ~ & ~ \\
-  Feb 2016 to Feb 2017
-  & \jobtitle{Software engineer}
-    @ (formerly) OOHLALA Mobile; \url{https://www.readyeducation.com} \\
-  & Backend web and server-side development; Python, SQL \\
-  & Develop integrations with existing institutional infrastructure \\
     % & \\
   % Jan. 2015 to Sep. 2015
   %   & \jobtitle{CTO and cofounder}
@@ -101,67 +136,91 @@
   %   & Supervised by
   %     \href{http://simongravel.lab.mcgill.ca/Home.html}{Simon Gravel},
   %     \href{mailto:simon.gravel@mcgill.ca}{simon.gravel@mcgill.ca}
-\end{tabular}
 
 \subsection*{Education}
 
-\begin{tabular}[h]{L!{\VRule}R}
-  May 2018 to Sep 2020
-  & \jobtitle{M.Sc. Computer Science (Thesis)} @ McGill University -- GPA $3.91$ \\
-  & Part of the \href{http://cs.mcgill.ca/~complogic}{Computation and Logic
-    Group} led by \href{http://www.cs.mcgill.ca/~bpientka/}{Brigitte Pientka} \\
-  & Research on interactive theorem proving, proof automation \\
-  & Funding by FRQNT B1X scholarship (\$35,000 value) \\
-  ~ & ~ \\
-  Sep 2014 to Dec 2017
-  & \jobtitle{B.Sc. Mathematics \& Computer Science} @ McGill University -- GPA $3.74$ \\
-  & Relevant courses: compiler design, distributed systems, theory of computation, logic,
-    set theory \\
-  & Awarded an NSERC USRA for undergraduate research (\$5,625 value) \\
-  ~ & ~ \\
-  Sep 2012 to May 2014
-    & \jobtitle{D\'EC Pure and Applied Science} (Honours),
-      Dawson College, Westmount. \\
-    & Admitted to the Honour Roll every semester. Final average above 90\%.
-\end{tabular}
+\subsubsection*{
+  \jobtitle{M.Sc. Computer Science (Thesis)} @ McGill University, Montreal
+  \hfill Fall 2018 to Fall 2020
+}
+\begin{itemize}\tightlist
+  \item Part of the \href{http://cs.mcgill.ca/~complogic}{Computation and Logic Group} led by
+    \href{http://www.cs.mcgill.ca/~bpientka/}{Brigitte Pientka}
+  \item Research on interactive theorem proving, proof automation
+  \item Funding by FRQNT B1X scholarship (\$35,000 value)
+  \item GPA $3.91$
+\end{itemize}
 
-\subsection*{Volunteer \& Outreach}
+\subsubsection*{
+  \jobtitle{B.Sc. Mathematics \& Computer Science} @ McGill University, Montreal, Canada
+  \hfill Fall 2014 to Fall 2017
+}
+\begin{itemize}\tightlist
+  \item Advanced courses: compiler design, distributed systems, theory of computation, theory of
+    programming languages
+  \item Attended many hackathons, won a prize at one
+  \item Awarded an undergraduate research prize (\$5,625 value)
+  \item GPA $3.74$
+\end{itemize}
 
-\begin{tabular}[h]{L!{\VRule}R}
-  Sep. 2015 to May 2016
-    & \jobtitle{Outreach director} @ HackMcGill, McGill University's hacker club. \\
-    & Organized community events and tutorials,
-      participated in organizing \href{http://mchacks.ca/}{McHacks}.
-\end{tabular}
+  % ~ & ~ \\
+  % Sep 2012 to May 2014
+  %   & \jobtitle{D\'EC Pure and Applied Science} (Honours),
+  %     Dawson College, Westmount. \\
+  %   & Admitted to the Honour Roll every semester. Final average above 90\%.
 
-\subsection*{Projects}
+% \subsection*{Volunteer \& Outreach}
 
-\begin{description}
-  \item[\href{https://computing-workshop.com/}{Computing Workshop}.]
-    My partner and I create and run workshops on computer science. We have taught the most recent
-    one, an introduction to machine learning in Python, a total of six times as a co-curricular
-    activity at McGill University. Our materials are all available online
-    \url{https://computing-workshop.com/}
+% \begin{tabular}[h]{L!{\VRule}R}
+%   Fall 2017 to \emph{present}
+%     & \jobtitle{Instructor} @ Computing Workshop; \url{https://computing-workshop.com} \\
+%     &  \\
+%   ~ & ~ \\
+%   Sep. 2015 to May 2016
+%     & \jobtitle{Outreach director} @ HackMcGill, McGill University's hacker club. \\
+%     & Organized community events and tutorials,
+%       participated in organizing \href{http://mchacks.ca/}{McHacks}.
+% \end{tabular}
 
-  \item[\href{https://github.com/tsani/eval}{Eval}.]
-    I implemented a strongly-typed, functional language with parametric polymorphism, user-defined
-    datatypes, pattern matching, and general recursion. It is implemented in pure OCaml without
-    dependencies beyond the standard library. This is meant to showcase the big ideas in the course
-    COMP~302 that I teach at McGill.
+% % PROJECTS
+% \begin{description}
+%   % \item[Git-based homework delivery and submission.]
+%   %   A key learning goal of ``Introduction to Software Systems,'' which I teach at McGill
+%   %   University, is to use \texttt{git} -- this is a student's first introduction to it in our
+%   %   curriculum. I developed a methodology for delivering homework to students via git, using a
+%   %   \textbf{custom CI/CD pipeline to automatically grade submissions. This saves over 400 hours of
+%   %   TA time ($\sim \$12,000$) per semester.}
+%   % \item[\href{https://github.com/tsani/eval}{Eval}.]
+%   %   I implemented a strongly-typed, functional language with parametric polymorphism, user-defined
+%   %   datatypes, pattern matching, and general recursion. It is implemented in pure OCaml without
+%   %   dependencies beyond the standard library. This is meant to showcase the big ideas in the course
+%   %   COMP~302 that I teach at McGill.
+%   \item[\href{https://github.com/tsani/servant-github-webhook}{servant-github-webhook}.]
+%     I created and maintained this Haskell library to securely integrate GitHub webhooks with the
+%     Servant REST framework. In a Servant API type definition, library users express which routes
+%     should be considered webhooks. The library takes care of \textbf{automatically authenticating
+%     requests.}
+% 
+%   \item[\href{https://computing-workshop.com/}{Computing Workshop}.]
+%     Co-created with my partner, we have been teaching workshops and summer camps nearly a decade at
+%     McGill about programming in Python, AI/ML, and computer science in general.
+% 
+%   \item[Personal automation.]
+%     I appreciate using my technical skills to reap small daily time-savings. I made it so when I
+%     connect my e-reader to my computer, all the highlights I made while reading are synchronized to
+%     my Obsidian notes. I made a Discord bot I can use to record todos into my Obsidian notes.
+% 
+%   % \item[Fast accumulator startup.]
+%   %   In a 10-week internship at 1010data in New York City, I worked to
+%   %   accelerate the core platform login.
+%   %   My work achieves a \textbf{10x speedup in the login time} by introducing a caching mechanism:
+%   %   new user session processes are now started via forking.
+%   %   This mechanism is built as a C extension to the K interpreter, and includes
+%   %   a framework for reparenting terminal applications to facilitate debugging.
+% \end{description}
 
-  \item[\href{https://github.com/tsani/servant-github-webhook}{servant-github-webhook}.]
-    I created and maintain this Haskell library to securely integrate GitHub webhooks with the
-    Servant REST framework. Users of the library express within a Servant API type definition which
-    routes should be considered webhooks, and the library takes care of automatically validating
-    requests to ensure that they come from GitHub.
+\textbf{Skills:} English (native), French (native), public speaking, course design, OCaml, Haskell,
+C++, TypeScript, NodeJS, React, Python, compiler \& typechecker implementation
 
-  % \item[Fast accumulator startup.]
-  %   In a 10-week internship at 1010data in New York City, I worked to
-  %   accelerate the core platform login.
-  %   My work achieves this by introducing a caching mechanism:
-  %   new user session processes are now started via forking.
-  %   This mechanism is built as a C extension to the K interpreter, and includes
-  %   a framework for reparenting terminal applications to facilitate debugging.
-\end{description}
 
 \end{document}
